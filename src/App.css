@@ -1,28 +1,33 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+.app {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.header,
+.footer {
+  flex: 0;
+  height: 70px;
+  background: #ccc;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.main {
+  flex: 1;
+  /* overflow: hidden; */
+}
+.main:after {
+  clear: both;
 }
 
-.App-title {
-  font-size: 1.5em;
+.main_nav {
+  float: left;
+  width: 200px;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.main-right {
+  float: left;
+  width: 1000px;
+  height: 550px;
+  border: 1px solid #ccc;
 }
